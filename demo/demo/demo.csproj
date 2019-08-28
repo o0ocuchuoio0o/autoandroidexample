@@ -32,6 +32,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Emgu.CV.World">
+      <HintPath>..\..\..\..\THANGLUU\AutoAndroid\KAutoHelper V2\Dành riêng cho xử lý ảnh\Emgu.CV.World.dll</HintPath>
+    </Reference>
+    <Reference Include="KAutoHelper">
+      <HintPath>..\..\..\..\THANGLUU\AutoAndroid\KAutoHelper V2\KAutoHelper.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -53,6 +59,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
