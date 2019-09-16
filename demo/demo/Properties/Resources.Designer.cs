@@ -67,5 +67,112 @@ namespace demo.Properties
                 resourceCulture = value;
             }
         }
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] ApiDemos_debug
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("ApiDemos_debug", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] IntentExample
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("IntentExample", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] PathToLinuxNode
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("PathToLinuxNode", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] PathToMacOSNode
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("PathToMacOSNode", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] PathToWindowsNode
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("PathToWindowsNode", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] TestApp_app
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("TestApp_app", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] UICatalog_app
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("UICatalog_app", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] vodqa
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("vodqa", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] WebViewApp_app
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("WebViewApp_app", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
     }
 }

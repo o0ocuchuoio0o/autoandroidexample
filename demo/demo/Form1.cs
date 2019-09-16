@@ -112,5 +112,31 @@ namespace demo
         {
             isStop = true;
         }
+
+
+        void SUB(string link)
+        {
+            List<string> devices = new List<string>();
+            devices = KAutoHelper.ADBHelper.GetDevices();
+            foreach (var deviceID in devices)
+            {
+                Task t = new Task(() => {
+                    string cmd = "adb shell am start -a android.intent.action.VIEW '"+ link + "'";
+                    KAutoHelper.ADBHelper.ExecuteCMD(cmd);
+                }
+                );
+                t.Start();
+            }
+
+        }
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Task t = new Task(() => {
+                isStop = false;
+                SUB("https://www.youtube.com/watch?v=TleC_wPdjdk");
+            }
+            );
+            t.Start();
+        }
     }
 }
