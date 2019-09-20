@@ -38,8 +38,8 @@ namespace Test_Embed
                  SetWindowLong(p.MainWindowHandle, GWL_STYLE, WS_VISIBLE);
                  MoveWindow(p.MainWindowHandle, 0, -35, 367 , 654, true);
             //p1\
-            /*
-            Process p1 = Process.Start(@"C:\Users\Workstation Z400\Desktop\LDPlayer-1.lnk");
+          
+            Process p1 = Process.Start(@"C:\Users\Workstation Z400\Desktop\LDPlayer-2.lnk");
             Thread.Sleep(2000);
             p1.WaitForInputIdle();
             
@@ -47,24 +47,24 @@ namespace Test_Embed
             SetWindowLong(p1.MainWindowHandle, GWL_STYLE, WS_VISIBLE);
             MoveWindow(p1.MainWindowHandle, 0, -35, 367, 654, true);
 
-            //p2
-            Process p2 = Process.Start(@"C:\Users\Workstation Z400\Desktop\LDPlayer-2.lnk");
-            Thread.Sleep(2000);
-            p2.WaitForInputIdle();
+            ////p2
+            //Process p2 = Process.Start(@"C:\Users\Workstation Z400\Desktop\LDPlayer-2.lnk");
+            //Thread.Sleep(2000);
+            //p2.WaitForInputIdle();
 
-            SetParent(p2.MainWindowHandle, this.panel3.Handle);
-            SetWindowLong(p2.MainWindowHandle, GWL_STYLE, WS_VISIBLE);
-            MoveWindow(p2.MainWindowHandle, 0, -35, 367, 654, true);
-            */
+            //SetParent(p2.MainWindowHandle, this.panel3.Handle);
+            //SetWindowLong(p2.MainWindowHandle, GWL_STYLE, WS_VISIBLE);
+            //MoveWindow(p2.MainWindowHandle, 0, -35, 367, 654, true);
+          
 
         }
         ///////////////////////////
-        
 
-            /// <summary>
-            /// Track if the application has been created
-            /// </summary>
-            bool created = false;
+
+        /// <summary>
+        /// Track if the application has been created
+        /// </summary>
+        bool created = false;
 
             /// <summary>
             /// Handle to the application Window
