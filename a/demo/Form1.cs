@@ -34,9 +34,7 @@ namespace demo
             {
                 deviceID = listDevice.First();
             }
-            //KAutoHelper.ADBHelper.TapByPercent(deviceID, 32.8, 26.2);
-
-            KAutoHelper.ADBHelper.InputText(deviceID, "youtube@gmailnguyễn.com");
+            KAutoHelper.ADBHelper.TapByPercent(deviceID, 32.8, 26.2);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -64,19 +62,19 @@ namespace demo
                         if (isStop)
                             return;
                         // click vào webbrowser
-                        KAutoHelper.ADBHelper.TapByPercent(deviceID, 28.2, 8.1);
+                        KAutoHelper.ADBHelper.TapByPercent(deviceID, 32.8, 26.2);
                         Delay(5);
                         // nếu có lệnh stop thì dừng toàn bộ luồng chạy
                         if (isStop)
                             return;
                         // click vào webbrowser
-                        KAutoHelper.ADBHelper.TapByPercent(deviceID, 37.9, 39.1);
+                        KAutoHelper.ADBHelper.TapByPercent(deviceID, 67.9, 18.3);
                         Delay(5);
                         // nếu có lệnh stop thì dừng toàn bộ luồng chạy
                         if (isStop)
                             return;
                         // nhập vào text
-                        KAutoHelper.ADBHelper.InputText(deviceID, "youtube@.com");
+                        KAutoHelper.ADBHelper.InputText(deviceID, "youtube.com");
                         Delay(2);
                         // nếu có lệnh stop thì dừng toàn bộ luồng chạy
                         if (isStop)

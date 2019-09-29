@@ -304,7 +304,29 @@ namespace demo
                 resBitmap.Save("res.PNG");
             }
         }
+        #region PROFILE DEMO: profile_danplay_mau: oke - error
+        //public string profile_danplay_mau_demo(string profile_name)
+        //{
+        //    string profile_add = "Profile";
+        //    string profile_new = "Profile\\" + profile_name;
+        //    try
+        //    {
 
+        //        if (!Directory.Exists(profile_add)) { Directory.CreateDirectory(profile_add); }
+        //        ChromeOptions options = new ChromeOptions();
+        //        options.AddArgument("user-data-dir=" + ProfileFolderPath + "\\" + profile_name);
+        //        options.AddArgument("--window-size=1500,900");
+        //        options.AddArgument("--disable-infobars");
+        //        options.AddArgument("--disable-notifications");
+        //        var driverService = ChromeDriverService.CreateDefaultService();
+        //        driverService.HideCommandPromptWindow = true;
+        //        driver = new ChromeDriver(driverService, options);
+
+        //    }
+        //    catch { MessageBox.Show("Có lỗi, bạn tạo 2 profile trùng tên...", "Thông báo"); }
+        //    return "oke";
+        //}
+        #endregion
         private void button17_Click(object sender, EventArgs e)
         {
             var screen = CaptureHelper.CaptureScreen();
@@ -321,13 +343,11 @@ namespace demo
 
         private void button18_Click(object sender, EventArgs e)
         {
-            var handle = AutoControl.FindWindowHandle("LDMultiPlayerMainFrame" == "" ? null : "LDMultiPlayerMainFrame", "" == "" ? null : "");
+            var handle = AutoControl.FindWindowHandle("Qt5QWindow" == "" ? null : "Qt5QWindow", "" == "" ? null : "");
 
             var sub = (Bitmap)Bitmap.FromFile("data//data.png");
-
             var main = (Bitmap)CaptureHelper.CaptureWindow(handle);
-            //var screen = CaptureHelper.CaptureWindow(handle);
-            //screen.Save("mainScreen.PNG");
+
             var point = ImageScanOpenCV.FindOutPoint(main, sub);
 
             if (point != null)
