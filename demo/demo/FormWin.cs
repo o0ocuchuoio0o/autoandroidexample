@@ -332,7 +332,12 @@ namespace demo
 
             if (point != null)
             {
-                AutoControl.SendClickOnPosition(handle, point.Value.X, point.Value.Y);
+             //   AutoControl.SendClickOnPosition(handle, point.Value.X, point.Value.Y);
+
+                var pointToClick = AutoControl.GetGlobalPoint(handle, point.Value.X+7, point.Value.Y+5);
+                EMouseKey mouseKey = EMouseKey.DOUBLE_LEFT;
+                AutoControl.BringToFront(handle);
+                AutoControl.MouseClick(pointToClick, mouseKey);
             }
         }
     }
