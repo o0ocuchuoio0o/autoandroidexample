@@ -323,22 +323,26 @@ namespace demo
         {
             var handle = AutoControl.FindWindowHandle("LDMultiPlayerMainFrame" == "" ? null : "LDMultiPlayerMainFrame", "" == "" ? null : "");
 
+            #region // khởi tạo và restore file backup
+
+
+            #endregion
+
+            #region // ấn nút bắt đầu
             var sub = (Bitmap)Bitmap.FromFile("data//data.png");
-
-            var main = (Bitmap)CaptureHelper.CaptureWindow(handle);
-            //var screen = CaptureHelper.CaptureWindow(handle);
-            //screen.Save("mainScreen.PNG");
+            var main = (Bitmap)CaptureHelper.CaptureWindow(handle);          
             var point = ImageScanOpenCV.FindOutPoint(main, sub);
-
             if (point != null)
             {
              //   AutoControl.SendClickOnPosition(handle, point.Value.X, point.Value.Y);
-
                 var pointToClick = AutoControl.GetGlobalPoint(handle, point.Value.X+7, point.Value.Y+5);
                 EMouseKey mouseKey = EMouseKey.DOUBLE_LEFT;
                 AutoControl.BringToFront(handle);
                 AutoControl.MouseClick(pointToClick, mouseKey);
             }
+            #endregion
+
+
         }
     }
 }
